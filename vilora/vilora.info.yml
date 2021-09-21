@@ -6,10 +6,15 @@ core: 8.x
 core_version_requirement: ^8 || ^9
 base theme: bartik
 
-# libraries:
-#   - vilora/global-styling
-# regions:
-#   header: Header
-#   content: Content
-#   sidebar_first: 'Sidebar first'
-#   footer: Footer
+libraries:
+  - vilora/vilora-bootstrap
+
+regions:
+  header: 'Header'
+  highlighted: 'Highlighted'
+  breadcrumb: 'Breadcrumb'
+  content: 'Content'
+  sidebar_right: 'Sidebar Right'
+  sidebar_left: 'Sidebar Left'
+  footer: 'Footer'
+  help: 'Help'

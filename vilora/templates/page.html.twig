@@ -1,0 +1,29 @@
+<header>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30"
+                    height="24" class="align-text-top">
+                Bootstrap
+            </a>
+            <div class="header">
+                {{page.header}}
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container-fluid">{{page.breadcrumb}}</div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            {{page.sidebar_left}}
+        </div>
+        <div class="col-6">
+            {{page.content}}
+        </div>
+        <div class="col">
+            {{page.sidebar_right}}
+        </div>
+    </div>
+</div>
+<div class="container-fluid m-0 p-0">{{page.footer}}</div>

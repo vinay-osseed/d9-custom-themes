@@ -1,0 +1,13 @@
+.header ul li{
+
+    float: left;
+}
+.header ul li a,a:visited,a:active
+/* ,.region-header li a.is-active */
+{
+    text-decoration: none;
+    color: black;
+}
+.region-header .block-menu {
+    width: 340px;
+}

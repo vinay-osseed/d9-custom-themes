@@ -1,0 +1,33 @@
+/* prevent defaults START */
+*,html {
+    padding: 0;
+    box-sizing: border-box;
+}
+/* prevent defaults END */
+
+/* for header section START */
+.header ul li{
+    float: left;
+}
+a{
+    text-decoration: none;
+    border-bottom:0;
+}
+.header ul li a,a:visited,a:active{
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+.region-header .block-menu {
+    width: 390px;
+}
+/* for header section END */
+
+/* for main section START */
+.breadcrumb ol li a{
+    color: #0d6efd;
+}
+/* for main section END */
+
+/* for footer section START */
+
+/* for footer section END */

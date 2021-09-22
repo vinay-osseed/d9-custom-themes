@@ -10,6 +10,7 @@ libraries:
   - vilora/vilora-bootstrap
 
 regions:
+  brand: 'Site branding'
   header: 'Header'
   highlighted: 'Highlighted'
   breadcrumb: 'Breadcrumb'

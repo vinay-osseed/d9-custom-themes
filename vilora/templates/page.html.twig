@@ -1,29 +1,55 @@
+{# Header Start #}
 <header>
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30"
-                    height="24" class="align-text-top">
-                Bootstrap
-            </a>
+            <div>{{ page.brand }}</div> {# navbar logo & name of site #}
             <div class="header">
-                {{page.header}}
+                {{page.header}} {# page header including main menu #}
             </div>
         </div>
     </nav>
 </header>
-<div class="container-fluid">{{page.breadcrumb}}</div>
-<div class="container">
-    <div class="row">
-        <div class="col">
-            {{page.sidebar_left}}
-        </div>
-        <div class="col-6">
-            {{page.content}}
-        </div>
-        <div class="col">
-            {{page.sidebar_right}}
+{# Header End #}
+
+{# Info Section Start #}
+<section>
+    <div class="container-fluid">{{page.breadcrumb}}</div> {# Show Breadcrumbod Page #}
+    <div class="container-fluid">{{page.help}}</div> {# Show Help Messages When Needed #}
+</section>
+{# Info Section End #}
+
+{# Main Section Start #}
+<main>
+    <div class="container-fluid px-5">
+        <div class="row">
+
+            {% if page.sidebar_left %}
+
+            <div class="col mt-2">
+                {{page.sidebar_left}} {# If Sidebar is Available Then Show Siderbar-Left #}
+            </div>
+
+            {% endif %}
+
+            <div class="col-lg-6 mt-3">
+                {{page.content}} {# Shows The Main Content of The Page #}
+            </div>
+
+            {% if page.sidebar_right %}
+
+            <div class="col mt-2">
+                {{page.sidebar_right}} {# If Sidebar is Available Then Show Siderbar-Right #}
+            </div>
+
+            {% endif %}
+
         </div>
     </div>
-</div>
-<div class="container-fluid m-0 p-0">{{page.footer}}</div>
+</main>
+{# Main Section End #}
+
+{# Footer Section Start #}
+<footer class="bg-secondary p-lg-5 p-sm-3">
+    <div class="container-fluid m-0 p-0 bg-secondary">{{page.footer}}</div> {# Shows The All Footer Content Here #}
+</footer>
+{# Footer Section Start #}

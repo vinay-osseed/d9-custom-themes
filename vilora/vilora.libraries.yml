@@ -1,9 +1,9 @@
 vilora-bootstrap:
   css:
     theme:
-      css/bootstrap.min.css: {}
-      css/navbar.css: {}
+      css/bootstrap.min.css: {} # Bootstrap 5 CSS
+      css/page.css: {}
   js:
-    js/bootstrap.min.js: {}
+    js/bootstrap.min.js: {}  # Bootstrap 5 JS
   dependencies:
     - core/jquery
